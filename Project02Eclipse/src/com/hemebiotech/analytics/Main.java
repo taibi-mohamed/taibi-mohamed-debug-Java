@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String args[]) {
 
 		//Instanciation des variables
-		String filepath = "C:\\Users\\Taibi Mohamed\\git\\-taibi-mohamed-debug-Java\\Project02Eclipse\\src\\symptoms.txt";
+		String filepath = "C:\\Users\\Taibi Mohamed\\eclipse-workspace\\taibi-mohamed-debug-Java\\Project02Eclipse\\src\\symptoms.txt";
 		ISymptomReader symptomReader = new ReadSymptomDataFromFile(filepath);
 		ISymptomWriter symptomWriter = new WriteSymptomDataToFile();	
 		AnalyticsCounter analyticsCounter = new AnalyticsCounter(symptomReader, symptomWriter);
