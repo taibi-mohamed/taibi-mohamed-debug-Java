@@ -16,6 +16,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter{
 	public void writeSymptoms(Map<String, Integer> symptoms) {
 		// TODO Auto-generated method stub
 		//On instancie un objet FlieWriter qui va créer le fichier result.out vide
+		
 		try (FileWriter writer = new FileWriter("result.out")) {
 			//On boucle sur la map reçue en argument
 			for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
